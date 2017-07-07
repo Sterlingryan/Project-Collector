@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "470888800464",
+    "firebase_url": "https://worldquest-5f2c1.firebaseio.com",
+    "project_id": "worldquest-5f2c1",
+    "storage_bucket": "worldquest-5f2c1.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:470888800464:android:46776d8e7278f94a",
+        "android_client_info": {
+          "package_name": "com.example.android.worldquest"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "470888800464-pf3tedkndebs28vbpqjm2e9b038vru40.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.android.worldquest",
+            "certificate_hash": "28df4eaf0c6bb8a2fa8e52737d8cfbcd99dfc5f9"
+          }
+        },
+        {
+          "client_id": "470888800464-nehck5ias10fk40phthd39h8h0n8tblh.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCGXCusznchiHaWE3aI91V6E0m_xdgEhHQ"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "470888800464-nehck5ias10fk40phthd39h8h0n8tblh.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
