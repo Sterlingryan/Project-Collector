@@ -17,7 +17,7 @@
     <!-- Facebook resources -->
     <string name="facebook_application_id" translatable="false">179784575893163</string>
     <!-- Enables Chrome Custom tabs. -->
-    <string name="facebook_login_protocol_scheme" translatable="false">fb179784575893163</string>
+    <!--<string name="facebook_login_protocol_scheme" translatable="false">fb179784575893163</string>-->
 
     <!-- Login Errors-->
     <string name="sign_in_cancelled">Sign in was cancelled</string>

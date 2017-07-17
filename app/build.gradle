@@ -33,5 +33,10 @@ dependencies {
 
     // Required only if Facebook login support is required
     compile('com.facebook.android:facebook-android-sdk:4.22.1')
+
+    // MapBox Dependencies
+    compile('com.mapbox.mapboxsdk:mapbox-android-sdk:5.1.0@aar') {
+        transitive=true
+    }
 }
 apply plugin: 'com.google.gms.google-services'
