@@ -22,7 +22,11 @@ import com.firebase.ui.auth.ErrorCodes;
 import com.firebase.ui.auth.IdpResponse;
 import com.firebase.ui.auth.ResultCodes;
 import com.mapbox.mapboxsdk.Mapbox;
+import com.mapbox.mapboxsdk.camera.CameraPosition;
+import com.mapbox.mapboxsdk.geometry.LatLng;
 import com.mapbox.mapboxsdk.maps.MapView;
+import com.mapbox.mapboxsdk.maps.MapboxMap;
+import com.mapbox.mapboxsdk.maps.OnMapReadyCallback;
 
 import java.security.MessageDigest;
 import java.security.NoSuchAlgorithmException;
@@ -43,10 +47,22 @@ public class MainActivity extends AppCompatActivity{
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        Mapbox.getInstance(this, "pk.eyJ1Ijoic3RlcmxpbmdyeWFuIiwiYSI6ImNqNThlOHluNTFiMWoycW1jenJseGJ2aGUifQ.2MR6MsIZMD8SDMtsu83AcQ");
+        Mapbox.getInstance(this, getString(R.string.mapbox_access_token));
         setContentView(R.layout.activity_main);
+
         mapView = (MapView) findViewById(R.id.mapView);
         mapView.onCreate(savedInstanceState);
+
+        mapView.getMapAsync(new OnMapReadyCallback() {
+            @Override
+            public void onMapReady(MapboxMap mapboxMap) {
+                mapboxMap.setMyLocationEnabled(true);
+                CameraPosition cameraPosition = new CameraPosition.Builder()
+                        .target(new LatLng())
+                        .build();
+                mapboxMap.setCameraPosition(cameraPosition);
+            }
+        });
     }
 
     @Override

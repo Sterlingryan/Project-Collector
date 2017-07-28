@@ -24,4 +24,7 @@
     <string name="no_internet_connection">Unable to connect</string>
     <string name="unknown_error">Could not sign in, unknown error</string>
     <string name="unknown_sign_in_response">unknown sign in response</string>
+
+    <!-- MapBox values-->
+    <string name="mapbox_access_token">pk.eyJ1Ijoic3RlcmxpbmdyeWFuIiwiYSI6ImNqNThlOHluNTFiMWoycW1jenJseGJ2aGUifQ.2MR6MsIZMD8SDMtsu83AcQ</string>
 </resources>
