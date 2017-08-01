@@ -129,11 +129,25 @@ public class ProviderLocationTracker implements LocationListener, LocationTracke
 
     @Override
     public Location getLocation() {
-        return null;
+        if(lastLocation == null){
+            return null;
+        }
+        if(System.currentTimeMillis() - lastTime > 5 * minimumUpdateTime){
+            return null; //stale
+        }
+        return lastLocation;
     }
 
     @Override
     public Location getPossiblyStaleLocation() {
+        if(lastLocation != null){
+            return lastLocation;
+        }
+        try{
+            return locationManager.getLastKnownLocation(provider);
+        } catch (SecurityException e){
+            // TODO permission request dialogue
+        }
         return null;
     }
 }
