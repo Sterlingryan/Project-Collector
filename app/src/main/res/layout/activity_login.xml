@@ -87,6 +87,20 @@
                         android:text="@string/action_register_short"
                         android:textStyle="bold"/>
 
+                <com.google.android.gms.common.SignInButton
+                        android:layout_marginTop="64dp"
+                        android:id="@+id/google_sign_in_button"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp">
+
+                </com.google.android.gms.common.SignInButton>
+
+                <com.facebook.login.widget.LoginButton
+                        android:id="@+id/facebook_sign_in_button"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_marginTop="8dp"/>
+
             </LinearLayout>
         </ScrollView>
     </LinearLayout>
